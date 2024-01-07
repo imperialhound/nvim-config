@@ -1,17 +1,6 @@
 -- Initial setup guide I used (https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
 
--- DEFAULT OPTIONS 
--- from vim module (https://neovim.io/doc/user/quickref.html#option-list)
-vim.opt.number = true
-vim.opt.mouse = 'a'
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.hlsearch = false
-vim.opt.wrap = true
-vim.opt.breakindent = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = false
+require('user.settings')
 
 -- KEYBINDINGS
 vim.g.mapleader = ','
@@ -62,8 +51,6 @@ lazy.setup({
 	{{'folke/tokyonight.nvim'}}
 })
 
--- Setup color
-vim.opt.termguicolors = true
 vim.cmd.colorscheme('tokyonight')
 
 
