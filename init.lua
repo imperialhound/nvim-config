@@ -6,3 +6,5 @@ require('user.settings')
 
 -- Temporary hack until setup in plugins 
 require("nvim-tree").setup()
+
+vim.cmd('colorscheme kanagawa')

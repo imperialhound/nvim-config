@@ -1,4 +1,4 @@
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 -- Copy/paste
 vim.keymap.set({'n', 'x'}, 'yy', '"+y')
