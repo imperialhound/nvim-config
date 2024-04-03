@@ -43,3 +43,6 @@ vim.opt.termguicolors = true
 -- Set grep default grep command with ripgrep
 vim.opt.grepprg = 'rg --vimgrep --follow'
 vim.opt.errorformat:append('%f:%l:%c%p%m')
+
+-- Disable showmode because lualine will do it already
+vim.opt.showmode = false
