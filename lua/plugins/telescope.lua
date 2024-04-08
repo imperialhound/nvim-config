@@ -57,7 +57,7 @@ function Plugin.config()
   local function dropdown(title, previewer)
     return {
       prompt_title = title,
-      previewer = previewer or false,
+      previewer = previewer or true,
       theme = 'dropdown'
     }
   end
@@ -86,7 +86,7 @@ function Plugin.config()
     },
     pickers = {
       buffers = dropdown(),
-      find_files = dropdown(),
+      find_files = defaults('Find Files'),
       oldfiles = dropdown('History'),
       keymaps = dropdown(),
       command_history = dropdown(),
